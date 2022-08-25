@@ -27,26 +27,26 @@ void Player::Update() {
 	++m_y;
 	// キー入力で座標更新
 	switch (i) {
-	case 'k':
+	case 'w':
 		--m_y;
 		dir_x = 0;
 		dir_y = -1;
 		break;
-	case 'h':
+	case 'a':
 		--m_x;
 		dir_x = -1;
 		dir_y = 0;
 		break;
-	case 'l':
+	case 'd':
 		++m_x;
 		dir_x = 1;
 		dir_y = 0;
 		break;
-	case 'j':
+	case 's':
 		dir_x = 0;
 		dir_y = 1;
 		break;
-	case 'd':
+	case ' ':
 		Dig();
 		break;
 	}

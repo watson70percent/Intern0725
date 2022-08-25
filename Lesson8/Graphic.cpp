@@ -25,12 +25,12 @@ void Graphic::Title() {
 void Graphic::Standby(int level,int width) {
 	system("cls");
 	printf("\x1b[%d;%dHLEVEL %d", 0, 0, level);
-	printf("\x1b[%d;%dHD:å@ÇÈ", 20, 4);
-	printf("\x1b[%d;%dH K", 18, 20 + width + 8);
+	printf("\x1b[%d;%dHSPACE:å@ÇÈ", 20, 4);
+	printf("\x1b[%d;%dH W", 18, 20 + width + 8);
 	printf("\x1b[%d;%dH Å™", 19, 20 + width +8);
-	printf("\x1b[%d;%dHHÅ©  Å®L", 20, 20 + width + 6);
+	printf("\x1b[%d;%dHAÅ©  Å®D", 20, 20 + width + 6);
 	printf("\x1b[%d;%dH Å´", 21, 20 + width + 8);
-	printf("\x1b[%d;%dH J", 22, 20 + width + 8);
+	printf("\x1b[%d;%dH S", 22, 20 + width + 8);
 }
 
 void Graphic::Win() {
